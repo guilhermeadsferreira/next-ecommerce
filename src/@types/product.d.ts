@@ -1,12 +1,9 @@
 declare type Product = {
-  id: number;
-  title: string;
+  id: string;
   price: Nullable<number>;
-  description: Nullable<string>;
-  category: string;
+  name: string;
+  quantity?: number | 1;
   image: string;
-  rating: {
-    rate: number;
-    count: number;
-  };
+  description: Nullable<string>;
+  currency?: string;
 };

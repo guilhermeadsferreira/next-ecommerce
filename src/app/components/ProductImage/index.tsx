@@ -6,7 +6,7 @@ const ProductImage: React.FC<ProductImageProps> = ({ product, fill }) => {
     <Image
       src={product.image}
       fill
-      alt={product.title}
+      alt={product.name}
       className="object-cover"
       placeholder="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
     />
@@ -15,7 +15,7 @@ const ProductImage: React.FC<ProductImageProps> = ({ product, fill }) => {
       src={product.image}
       width={400}
       height={700}
-      alt={product.title}
+      alt={product.name}
       className="object-cover"
       placeholder="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
     />

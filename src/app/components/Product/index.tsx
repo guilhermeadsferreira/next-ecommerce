@@ -1,6 +1,7 @@
 import React from "react";
 import { ProductProps } from "./types";
 import { ProductImage } from "..";
+import { formatPrice } from "@/lib/utils";
 
 const Product: React.FC<ProductProps> = ({ product }) => {
   return (
@@ -9,8 +10,8 @@ const Product: React.FC<ProductProps> = ({ product }) => {
         <ProductImage product={product} fill />
       </div>
       <div className="flex justify-between my-3 font-bold">
-        <p className="w-40 truncate">{product.title}</p>
-        <p className="text-md text-teal-300">{product.price}</p>
+        <p className="w-40 truncate">{product.name}</p>
+        <p className="text-md text-teal-300">{formatPrice(product.price)}</p>
       </div>
       <button className="rounded-md bg-teal-600 text-white px-3.5 py-2.5 text-sm text-center">
         Adicionar ao Carrinho
